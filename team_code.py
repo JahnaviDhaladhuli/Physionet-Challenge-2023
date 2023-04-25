@@ -16,13 +16,9 @@ import antropy as ant
 import mne
 import math
 import pandas as pd
-from typing import Union
-from typing import Tuple
 from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 import joblib
-import warnings
-warnings.filterwarnings("ignore")
 def train_challenge_model(data_folder, model_folder, verbose):
     # Find data files.
     if verbose >= 1:
